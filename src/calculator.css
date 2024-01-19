@@ -17,3 +17,25 @@ body {
   border-radius: 8px;
   overflow: hidden;
 }
+
+input {
+  grid-column: span 4;
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: right;
+  font-size: 1.5em;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #ddd;
+}
