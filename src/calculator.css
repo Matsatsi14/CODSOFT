@@ -5,17 +5,28 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  background-color: #000;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.calculator-container {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .calculator {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 8px;
-  max-width: 300px;
+  max-width: 400px;
   margin: auto;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
 }
 
 input {
@@ -29,13 +40,15 @@ input {
 }
 
 button {
-  padding: 10px;
+  padding: 15px;
   font-size: 1.2em;
   border: none;
   outline: none;
   cursor: pointer;
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease;
 }
 
 button:active {
-  background-color: #ddd;
+  background-color: #ccc;
 }
